@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+:root{
+--cor-de-fundo:#4d3d3d;
+--texto1:#ff0000;
+--texto2:#ff0000;
+--botao-ativo:#3a375e;
+--botao-inativo:rgba(203, 199, 245, 0.5);
+--texto-fundo:rgba(24, 24, 32, 0.3);
+}
+
+body{
+    background-color:var(--cor-de-fundo);
+    color:var(--texto1);
+    font-family: "Silkscreen", sans-serif;
+}
+
+.Conteudo-principal{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    max-width:100%;
+    margin:0 auto;
+}
+.titulo-principal{
+    text-align:center;
+    width: 100%;
+    font-size:100px;
+}
+.botao{
+    font-family:Arial, "Helvetica", sans-serif;
+    background-color: var(--botao-inativo);
+    display:flex;
+    color:var(--texto1);
+    padding:1 em;
+    font-size: 50px;
+    align-items:center;
+    width: 100%;
+
+
+
+}
+
+.botoes{
+
+    display:flex;
+}
+.botao:first-child{
+    border-radius:40px 0 0 40px;
+}
+.botao:last-child{
+    border-radius: 0 40px 40px 0;
+}
+.ativo{
+    background: var(--botao-ativo);
+    color:#f3f3f3;
+}
+
+.aba-textos{
+    background-color: var(--texto-fundo);
+}
+
+
